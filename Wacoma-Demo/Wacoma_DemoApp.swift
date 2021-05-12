@@ -12,6 +12,7 @@ struct Wacoma_DemoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .preferredColorScheme(.dark)
         }
     }
 }
