@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		38813346264C466C00EE2348 /* Done.txt in Resources */ = {isa = PBXBuildFile; fileRef = 38813344264C466C00EE2348 /* Done.txt */; };
 		38813347264C466C00EE2348 /* ToDo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 38813345264C466C00EE2348 /* ToDo.txt */; };
+		3881334A264C485500EE2348 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 38813349264C485500EE2348 /* LICENSE */; };
+		3881334C264C486100EE2348 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3881334B264C486100EE2348 /* README.md */; };
 		38AC646F264C44C300CD9279 /* Wacoma_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC646E264C44C300CD9279 /* Wacoma_DemoApp.swift */; };
 		38AC6471264C44C300CD9279 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC6470264C44C300CD9279 /* ContentView.swift */; };
 		38AC6473264C44C600CD9279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38AC6472264C44C600CD9279 /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 		38813344264C466C00EE2348 /* Done.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Done.txt; sourceTree = "<group>"; };
 		38813345264C466C00EE2348 /* ToDo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToDo.txt; sourceTree = "<group>"; };
 		38813348264C46F800EE2348 /* Wacoma-Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wacoma-Demo.entitlements"; sourceTree = "<group>"; };
+		38813349264C485500EE2348 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3881334B264C486100EE2348 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		38AC646B264C44C300CD9279 /* Wacoma-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wacoma-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38AC646E264C44C300CD9279 /* Wacoma_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wacoma_DemoApp.swift; sourceTree = "<group>"; };
 		38AC6470264C44C300CD9279 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 		38AC6462264C44C300CD9279 = {
 			isa = PBXGroup;
 			children = (
+				3881334B264C486100EE2348 /* README.md */,
+				38813349264C485500EE2348 /* LICENSE */,
 				38813343264C463F00EE2348 /* Notes */,
 				38AC646D264C44C300CD9279 /* Wacoma-Demo */,
 				38AC646C264C44C300CD9279 /* Products */,
@@ -162,10 +168,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3881334C264C486100EE2348 /* README.md in Resources */,
 				38813347264C466C00EE2348 /* ToDo.txt in Resources */,
 				38AC6476264C44C600CD9279 /* Preview Assets.xcassets in Resources */,
 				38AC6473264C44C600CD9279 /* Assets.xcassets in Resources */,
 				38813346264C466C00EE2348 /* Done.txt in Resources */,
+				3881334A264C485500EE2348 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
