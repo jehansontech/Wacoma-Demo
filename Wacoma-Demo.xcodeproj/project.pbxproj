@@ -18,8 +18,8 @@
 		38AC647E264C450400CD9279 /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC647D264C450400CD9279 /* Sections.swift */; };
 		38AC6480264C452B00CD9279 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC647F264C452B00CD9279 /* Navigation.swift */; };
 		38AC6482264C454300CD9279 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC6481264C454300CD9279 /* Settings.swift */; };
-		38AC6485264C456E00CD9279 /* Wacoma in Frameworks */ = {isa = PBXBuildFile; productRef = 38AC6484264C456E00CD9279 /* Wacoma */; };
-		38AC6487264C456E00CD9279 /* WacomaUI in Frameworks */ = {isa = PBXBuildFile; productRef = 38AC6486264C456E00CD9279 /* WacomaUI */; };
+		38E09075273055DA007DEB5D /* Wacoma in Frameworks */ = {isa = PBXBuildFile; productRef = 38E09074273055DA007DEB5D /* Wacoma */; };
+		38E09077273055DA007DEB5D /* WacomaUI in Frameworks */ = {isa = PBXBuildFile; productRef = 38E09076273055DA007DEB5D /* WacomaUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38AC6487264C456E00CD9279 /* WacomaUI in Frameworks */,
-				38AC6485264C456E00CD9279 /* Wacoma in Frameworks */,
+				38E09077273055DA007DEB5D /* WacomaUI in Frameworks */,
+				38E09075273055DA007DEB5D /* Wacoma in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,8 +121,8 @@
 			);
 			name = "Wacoma-Demo";
 			packageProductDependencies = (
-				38AC6484264C456E00CD9279 /* Wacoma */,
-				38AC6486264C456E00CD9279 /* WacomaUI */,
+				38E09074273055DA007DEB5D /* Wacoma */,
+				38E09076273055DA007DEB5D /* WacomaUI */,
 			);
 			productName = "Wacoma-Demo";
 			productReference = 38AC646B264C44C300CD9279 /* Wacoma-Demo.app */;
@@ -152,7 +152,7 @@
 			);
 			mainGroup = 38AC6462264C44C300CD9279;
 			packageReferences = (
-				38AC6483264C456E00CD9279 /* XCRemoteSwiftPackageReference "Wacoma" */,
+				38E09073273055DA007DEB5D /* XCRemoteSwiftPackageReference "Wacoma" */,
 			);
 			productRefGroup = 38AC646C264C44C300CD9279 /* Products */;
 			projectDirPath = "";
@@ -383,9 +383,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		38AC6483264C456E00CD9279 /* XCRemoteSwiftPackageReference "Wacoma" */ = {
+		38E09073273055DA007DEB5D /* XCRemoteSwiftPackageReference "Wacoma" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/jehansontech/Wacoma.git";
+			repositoryURL = "https://github.com/jehansontech/Wacoma";
 			requirement = {
 				branch = dev;
 				kind = branch;
@@ -394,14 +394,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		38AC6484264C456E00CD9279 /* Wacoma */ = {
+		38E09074273055DA007DEB5D /* Wacoma */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 38AC6483264C456E00CD9279 /* XCRemoteSwiftPackageReference "Wacoma" */;
+			package = 38E09073273055DA007DEB5D /* XCRemoteSwiftPackageReference "Wacoma" */;
 			productName = Wacoma;
 		};
-		38AC6486264C456E00CD9279 /* WacomaUI */ = {
+		38E09076273055DA007DEB5D /* WacomaUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 38AC6483264C456E00CD9279 /* XCRemoteSwiftPackageReference "Wacoma" */;
+			package = 38E09073273055DA007DEB5D /* XCRemoteSwiftPackageReference "Wacoma" */;
 			productName = WacomaUI;
 		};
 /* End XCSwiftPackageProductDependency section */
