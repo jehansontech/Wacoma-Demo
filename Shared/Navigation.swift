@@ -26,6 +26,7 @@ protocol NavItem {
 
 }
 
+
 struct Foo: NavItem {
 
     let type: NavItemType = .foo
@@ -51,8 +52,7 @@ struct FooSettingsView: View {
 
     var body: some View {
         Text("FooSettingsView")
-            .navigationTitle("\(item.name)")
-            .navigationBarTitleDisplayMode(.inline)
+            .modifier(NavBarStyle("\(item.name)"))
     }
 
     init(_ item: Binding<Foo>) {
@@ -66,8 +66,7 @@ struct FooDisplayView: View {
 
     var body: some View {
         Text("FooDisplayView")
-            .navigationTitle("\(item.name)")
-            .navigationBarTitleDisplayMode(.inline)
+            .modifier(NavBarStyle("\(item.name)"))
     }
 
     init(_ item: Binding<Foo>) {
@@ -102,8 +101,7 @@ struct BarSettingsView: View {
 
     var body: some View {
         Text("BarSettingsView")
-            .navigationTitle("\(item.name)")
-            .navigationBarTitleDisplayMode(.inline)
+            .modifier(NavBarStyle("\(item.name)"))
     }
 
     init(_ item: Binding<Bar>) {
@@ -117,8 +115,7 @@ struct BarDisplayView: View {
 
     var body: some View {
         Text("BarDisplayView")
-            .navigationTitle("\(item.name)")
-            .navigationBarTitleDisplayMode(.inline)
+            .modifier(NavBarStyle("\(item.name)"))
     }
 
     init(_ item: Binding<Bar>) {
@@ -153,8 +150,7 @@ struct BaxSettingsView: View {
 
     var body: some View {
         Text("BaxSettingsView")
-            .navigationTitle("\(item.name)")
-            .navigationBarTitleDisplayMode(.inline)
+            .modifier(NavBarStyle("\(item.name)"))
     }
 
     init(_ item: Binding<Bax>) {
@@ -168,8 +164,7 @@ struct BaxDisplayView: View {
 
     var body: some View {
         Text("BaxDisplayView")
-            .navigationTitle("\(item.name)")
-            .navigationBarTitleDisplayMode(.inline)
+            .modifier(NavBarStyle("\(item.name)"))
     }
 
     init(_ item: Binding<Bax>) {
@@ -184,8 +179,7 @@ struct EmptySettingsView: View {
 
     var body: some View {
         Text("\(name)SettingsView")
-            .navigationTitle("\(name)")
-            .navigationBarTitleDisplayMode(.inline)
+            .modifier(NavBarStyle("\(name)"))
     }
 
     init(_ name: String) {
@@ -199,8 +193,7 @@ struct EmptyDisplayView: View {
 
     var body: some View {
         Text("\(name)DisplayView")
-            .navigationTitle("\(name)")
-            .navigationBarTitleDisplayMode(.inline)
+            .modifier(NavBarStyle("\(name)"))
     }
 
     init(_ name: String) {
@@ -252,14 +245,14 @@ class NavRegistry: ObservableObject {
     func displayView(_ itemName: String) -> some View {
         Group {
             switch itemName {
-            case self.foo1.name:
-                FooDisplayView($foo1)
-            case self.foo2.name:
-                FooDisplayView($foo2)
-            case self.bar.name:
-                BarDisplayView($bar)
-            case self.bax.name:
-                BaxDisplayView($bax)
+//            case self.foo1.name:
+//                FooDisplayView($foo1)
+//            case self.foo2.name:
+//                FooDisplayView($foo2)
+//            case self.bar.name:
+//                BarDisplayView($bar)
+//            case self.bax.name:
+//                BaxDisplayView($bax)
             default:
                 EmptyDisplayView(itemName)
             }
@@ -305,6 +298,7 @@ struct NavSelectorView : View {
         VStack(alignment: .leading, spacing: 2) {
             Spacer().frame(height: 0) // shift top button down by spacing
             ForEach(registry.itemNames, id: \.self) { name in
+
                 NavigationLink(destination: registry.settingsView(name)
                                 .onAppear(perform: { registry.select(name) })) {
                     HStack {
@@ -315,15 +309,13 @@ struct NavSelectorView : View {
                     }
                     .modifier(SpanningButtonStyle())
                 }
-                .isDetailLink(false)
             }
             Spacer()
         }
         .foregroundColor(UIConstants.offWhite)
         .background(UIConstants.offBlack)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .navigationTitle("Items")
-        .navigationBarTitleDisplayMode(.inline)
+        .modifier(NavBarStyle("Items"))
     }
 }
 
@@ -335,9 +327,7 @@ struct NavDisplayView: View {
         registry.displayView(registry.selectionName)
             .foregroundColor(UIConstants.offWhite)
             .background(UIConstants.offBlack)
-            .navigationTitle("\(registry.selectionName)")
-            .navigationBarTitleDisplayMode(.inline)
-
+            .modifier(NavBarStyle("\(registry.selectionName)"))
     }
 }
 
@@ -351,5 +341,25 @@ struct Navigation: View {
             NavDisplayView()
         }
         .environmentObject(registry)
+    }
+}
+
+struct NavBarStyle: ViewModifier {
+
+    var title: String
+
+    public func body(content: Content) -> some View {
+#if os(iOS)
+        content
+            .navigationTitle(title)
+            .navigationBarTitleDisplayMode(.inline)
+#elseif os(macOS)
+        content
+            .navigationTitle(title)
+#endif
+    }
+
+    init(_ title: String) {
+        self.title = title
     }
 }
