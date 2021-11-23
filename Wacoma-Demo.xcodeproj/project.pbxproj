@@ -3,205 +3,280 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		38813346264C466C00EE2348 /* Done.txt in Resources */ = {isa = PBXBuildFile; fileRef = 38813344264C466C00EE2348 /* Done.txt */; };
-		38813347264C466C00EE2348 /* ToDo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 38813345264C466C00EE2348 /* ToDo.txt */; };
-		3881334A264C485500EE2348 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 38813349264C485500EE2348 /* LICENSE */; };
-		3881334C264C486100EE2348 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3881334B264C486100EE2348 /* README.md */; };
-		38AC646F264C44C300CD9279 /* Wacoma_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC646E264C44C300CD9279 /* Wacoma_DemoApp.swift */; };
-		38AC6471264C44C300CD9279 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC6470264C44C300CD9279 /* ContentView.swift */; };
-		38AC6473264C44C600CD9279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38AC6472264C44C600CD9279 /* Assets.xcassets */; };
-		38AC6476264C44C600CD9279 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38AC6475264C44C600CD9279 /* Preview Assets.xcassets */; };
-		38AC647E264C450400CD9279 /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC647D264C450400CD9279 /* Sections.swift */; };
-		38AC6480264C452B00CD9279 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC647F264C452B00CD9279 /* Navigation.swift */; };
-		38AC6482264C454300CD9279 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AC6481264C454300CD9279 /* Settings.swift */; };
-		38E09075273055DA007DEB5D /* Wacoma in Frameworks */ = {isa = PBXBuildFile; productRef = 38E09074273055DA007DEB5D /* Wacoma */; };
-		38E09077273055DA007DEB5D /* WacomaUI in Frameworks */ = {isa = PBXBuildFile; productRef = 38E09076273055DA007DEB5D /* WacomaUI */; };
+		3816E0D1274D493400E0D22C /* Wacoma_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0C1274D493200E0D22C /* Wacoma_DemoApp.swift */; };
+		3816E0D2274D493400E0D22C /* Wacoma_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0C1274D493200E0D22C /* Wacoma_DemoApp.swift */; };
+		3816E0D3274D493400E0D22C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0C2274D493200E0D22C /* ContentView.swift */; };
+		3816E0D4274D493400E0D22C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0C2274D493200E0D22C /* ContentView.swift */; };
+		3816E0D5274D493400E0D22C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3816E0C3274D493400E0D22C /* Assets.xcassets */; };
+		3816E0D6274D493400E0D22C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3816E0C3274D493400E0D22C /* Assets.xcassets */; };
+		3816E0E1274D495900E0D22C /* Wacoma in Frameworks */ = {isa = PBXBuildFile; productRef = 3816E0E0274D495900E0D22C /* Wacoma */; };
+		3816E0E3274D495900E0D22C /* WacomaUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3816E0E2274D495900E0D22C /* WacomaUI */; };
+		3816E0E6274D496A00E0D22C /* Wacoma in Frameworks */ = {isa = PBXBuildFile; productRef = 3816E0E5274D496A00E0D22C /* Wacoma */; };
+		3816E0E8274D496A00E0D22C /* WacomaUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3816E0E7274D496A00E0D22C /* WacomaUI */; };
+		3816E0EA274D49CF00E0D22C /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0E9274D49CF00E0D22C /* Navigation.swift */; };
+		3816E0EB274D49CF00E0D22C /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0E9274D49CF00E0D22C /* Navigation.swift */; };
+		3816E0EE274D49E900E0D22C /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0EC274D49E800E0D22C /* Sections.swift */; };
+		3816E0EF274D49E900E0D22C /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0EC274D49E800E0D22C /* Sections.swift */; };
+		3816E0F0274D49E900E0D22C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0ED274D49E800E0D22C /* Settings.swift */; };
+		3816E0F1274D49E900E0D22C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0ED274D49E800E0D22C /* Settings.swift */; };
+		389D9477274D4B4300260643 /* ToDo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 389D9474274D4B4300260643 /* ToDo.txt */; };
+		389D9478274D4B4300260643 /* ToDo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 389D9474274D4B4300260643 /* ToDo.txt */; };
+		389D9479274D4B4300260643 /* Done.txt in Resources */ = {isa = PBXBuildFile; fileRef = 389D9475274D4B4300260643 /* Done.txt */; };
+		389D947A274D4B4300260643 /* Done.txt in Resources */ = {isa = PBXBuildFile; fileRef = 389D9475274D4B4300260643 /* Done.txt */; };
+		389D947B274D4B4300260643 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 389D9476274D4B4300260643 /* README.md */; };
+		389D947C274D4B4300260643 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 389D9476274D4B4300260643 /* README.md */; };
+		389D947E274D4B4E00260643 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 389D947D274D4B4E00260643 /* LICENSE */; };
+		389D947F274D4B4E00260643 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 389D947D274D4B4E00260643 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		38813344264C466C00EE2348 /* Done.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Done.txt; sourceTree = "<group>"; };
-		38813345264C466C00EE2348 /* ToDo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToDo.txt; sourceTree = "<group>"; };
-		38813348264C46F800EE2348 /* Wacoma-Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wacoma-Demo.entitlements"; sourceTree = "<group>"; };
-		38813349264C485500EE2348 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		3881334B264C486100EE2348 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		38AC646B264C44C300CD9279 /* Wacoma-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wacoma-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		38AC646E264C44C300CD9279 /* Wacoma_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wacoma_DemoApp.swift; sourceTree = "<group>"; };
-		38AC6470264C44C300CD9279 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		38AC6472264C44C600CD9279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		38AC6475264C44C600CD9279 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		38AC6477264C44C600CD9279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		38AC647D264C450400CD9279 /* Sections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
-		38AC647F264C452B00CD9279 /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
-		38AC6481264C454300CD9279 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		3816E0C1274D493200E0D22C /* Wacoma_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wacoma_DemoApp.swift; sourceTree = "<group>"; };
+		3816E0C2274D493200E0D22C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3816E0C3274D493400E0D22C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3816E0C8274D493400E0D22C /* Wacoma-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wacoma-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3816E0CE274D493400E0D22C /* Wacoma-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wacoma-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3816E0D0274D493400E0D22C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		3816E0E9274D49CF00E0D22C /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		3816E0EC274D49E800E0D22C /* Sections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
+		3816E0ED274D49E800E0D22C /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		389D9474274D4B4300260643 /* ToDo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToDo.txt; sourceTree = "<group>"; };
+		389D9475274D4B4300260643 /* Done.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Done.txt; sourceTree = "<group>"; };
+		389D9476274D4B4300260643 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		389D947D274D4B4E00260643 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		38AC6468264C44C300CD9279 /* Frameworks */ = {
+		3816E0C5274D493400E0D22C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38E09077273055DA007DEB5D /* WacomaUI in Frameworks */,
-				38E09075273055DA007DEB5D /* Wacoma in Frameworks */,
+				3816E0E3274D495900E0D22C /* WacomaUI in Frameworks */,
+				3816E0E1274D495900E0D22C /* Wacoma in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3816E0CB274D493400E0D22C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3816E0E8274D496A00E0D22C /* WacomaUI in Frameworks */,
+				3816E0E6274D496A00E0D22C /* Wacoma in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		38813343264C463F00EE2348 /* Notes */ = {
+		3816E0BB274D493200E0D22C = {
 			isa = PBXGroup;
 			children = (
-				38813344264C466C00EE2348 /* Done.txt */,
-				38813345264C466C00EE2348 /* ToDo.txt */,
-			);
-			path = Notes;
-			sourceTree = "<group>";
-		};
-		38AC6462264C44C300CD9279 = {
-			isa = PBXGroup;
-			children = (
-				3881334B264C486100EE2348 /* README.md */,
-				38813349264C485500EE2348 /* LICENSE */,
-				38813343264C463F00EE2348 /* Notes */,
-				38AC646D264C44C300CD9279 /* Wacoma-Demo */,
-				38AC646C264C44C300CD9279 /* Products */,
+				389D947D274D4B4E00260643 /* LICENSE */,
+				389D9473274D4B4300260643 /* Notes */,
+				3816E0C0274D493200E0D22C /* Shared */,
+				3816E0CF274D493400E0D22C /* macOS */,
+				3816E0C9274D493400E0D22C /* Products */,
+				3816E0E4274D496A00E0D22C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		38AC646C264C44C300CD9279 /* Products */ = {
+		3816E0C0274D493200E0D22C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				38AC646B264C44C300CD9279 /* Wacoma-Demo.app */,
+				3816E0EC274D49E800E0D22C /* Sections.swift */,
+				3816E0ED274D49E800E0D22C /* Settings.swift */,
+				3816E0E9274D49CF00E0D22C /* Navigation.swift */,
+				3816E0C1274D493200E0D22C /* Wacoma_DemoApp.swift */,
+				3816E0C2274D493200E0D22C /* ContentView.swift */,
+				389D9476274D4B4300260643 /* README.md */,
+				3816E0C3274D493400E0D22C /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		3816E0C9274D493400E0D22C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3816E0C8274D493400E0D22C /* Wacoma-Demo.app */,
+				3816E0CE274D493400E0D22C /* Wacoma-Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		38AC646D264C44C300CD9279 /* Wacoma-Demo */ = {
+		3816E0CF274D493400E0D22C /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				38813348264C46F800EE2348 /* Wacoma-Demo.entitlements */,
-				38AC6472264C44C600CD9279 /* Assets.xcassets */,
-				38AC6470264C44C300CD9279 /* ContentView.swift */,
-				38AC6477264C44C600CD9279 /* Info.plist */,
-				38AC647F264C452B00CD9279 /* Navigation.swift */,
-				38AC6474264C44C600CD9279 /* Preview Content */,
-				38AC647D264C450400CD9279 /* Sections.swift */,
-				38AC6481264C454300CD9279 /* Settings.swift */,
-				38AC646E264C44C300CD9279 /* Wacoma_DemoApp.swift */,
+				3816E0D0274D493400E0D22C /* macOS.entitlements */,
 			);
-			path = "Wacoma-Demo";
+			path = macOS;
 			sourceTree = "<group>";
 		};
-		38AC6474264C44C600CD9279 /* Preview Content */ = {
+		3816E0E4274D496A00E0D22C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				38AC6475264C44C600CD9279 /* Preview Assets.xcassets */,
 			);
-			path = "Preview Content";
+			name = Frameworks;
 			sourceTree = "<group>";
+		};
+		389D9473274D4B4300260643 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				389D9474274D4B4300260643 /* ToDo.txt */,
+				389D9475274D4B4300260643 /* Done.txt */,
+			);
+			path = Notes;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		38AC646A264C44C300CD9279 /* Wacoma-Demo */ = {
+		3816E0C7274D493400E0D22C /* Wacoma-Demo (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38AC647A264C44C600CD9279 /* Build configuration list for PBXNativeTarget "Wacoma-Demo" */;
+			buildConfigurationList = 3816E0D9274D493400E0D22C /* Build configuration list for PBXNativeTarget "Wacoma-Demo (iOS)" */;
 			buildPhases = (
-				38AC6467264C44C300CD9279 /* Sources */,
-				38AC6468264C44C300CD9279 /* Frameworks */,
-				38AC6469264C44C300CD9279 /* Resources */,
+				3816E0C4274D493400E0D22C /* Sources */,
+				3816E0C5274D493400E0D22C /* Frameworks */,
+				3816E0C6274D493400E0D22C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Wacoma-Demo";
+			name = "Wacoma-Demo (iOS)";
 			packageProductDependencies = (
-				38E09074273055DA007DEB5D /* Wacoma */,
-				38E09076273055DA007DEB5D /* WacomaUI */,
+				3816E0E0274D495900E0D22C /* Wacoma */,
+				3816E0E2274D495900E0D22C /* WacomaUI */,
 			);
-			productName = "Wacoma-Demo";
-			productReference = 38AC646B264C44C300CD9279 /* Wacoma-Demo.app */;
+			productName = "Wacoma-Demo (iOS)";
+			productReference = 3816E0C8274D493400E0D22C /* Wacoma-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3816E0CD274D493400E0D22C /* Wacoma-Demo (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3816E0DC274D493400E0D22C /* Build configuration list for PBXNativeTarget "Wacoma-Demo (macOS)" */;
+			buildPhases = (
+				3816E0CA274D493400E0D22C /* Sources */,
+				3816E0CB274D493400E0D22C /* Frameworks */,
+				3816E0CC274D493400E0D22C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wacoma-Demo (macOS)";
+			packageProductDependencies = (
+				3816E0E5274D496A00E0D22C /* Wacoma */,
+				3816E0E7274D496A00E0D22C /* WacomaUI */,
+			);
+			productName = "Wacoma-Demo (macOS)";
+			productReference = 3816E0CE274D493400E0D22C /* Wacoma-Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		38AC6463264C44C300CD9279 /* Project object */ = {
+		3816E0BC274D493200E0D22C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					38AC646A264C44C300CD9279 = {
-						CreatedOnToolsVersion = 12.5;
+					3816E0C7274D493400E0D22C = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					3816E0CD274D493400E0D22C = {
+						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
-			buildConfigurationList = 38AC6466264C44C300CD9279 /* Build configuration list for PBXProject "Wacoma-Demo" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 3816E0BF274D493200E0D22C /* Build configuration list for PBXProject "Wacoma-Demo" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 38AC6462264C44C300CD9279;
+			mainGroup = 3816E0BB274D493200E0D22C;
 			packageReferences = (
-				38E09073273055DA007DEB5D /* XCRemoteSwiftPackageReference "Wacoma" */,
+				3816E0DF274D495900E0D22C /* XCRemoteSwiftPackageReference "Wacoma" */,
 			);
-			productRefGroup = 38AC646C264C44C300CD9279 /* Products */;
+			productRefGroup = 3816E0C9274D493400E0D22C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				38AC646A264C44C300CD9279 /* Wacoma-Demo */,
+				3816E0C7274D493400E0D22C /* Wacoma-Demo (iOS) */,
+				3816E0CD274D493400E0D22C /* Wacoma-Demo (macOS) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		38AC6469264C44C300CD9279 /* Resources */ = {
+		3816E0C6274D493400E0D22C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3881334C264C486100EE2348 /* README.md in Resources */,
-				38813347264C466C00EE2348 /* ToDo.txt in Resources */,
-				38AC6476264C44C600CD9279 /* Preview Assets.xcassets in Resources */,
-				38AC6473264C44C600CD9279 /* Assets.xcassets in Resources */,
-				38813346264C466C00EE2348 /* Done.txt in Resources */,
-				3881334A264C485500EE2348 /* LICENSE in Resources */,
+				389D9477274D4B4300260643 /* ToDo.txt in Resources */,
+				3816E0D5274D493400E0D22C /* Assets.xcassets in Resources */,
+				389D947B274D4B4300260643 /* README.md in Resources */,
+				389D9479274D4B4300260643 /* Done.txt in Resources */,
+				389D947E274D4B4E00260643 /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3816E0CC274D493400E0D22C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				389D9478274D4B4300260643 /* ToDo.txt in Resources */,
+				3816E0D6274D493400E0D22C /* Assets.xcassets in Resources */,
+				389D947C274D4B4300260643 /* README.md in Resources */,
+				389D947A274D4B4300260643 /* Done.txt in Resources */,
+				389D947F274D4B4E00260643 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		38AC6467264C44C300CD9279 /* Sources */ = {
+		3816E0C4274D493400E0D22C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38AC6471264C44C300CD9279 /* ContentView.swift in Sources */,
-				38AC647E264C450400CD9279 /* Sections.swift in Sources */,
-				38AC646F264C44C300CD9279 /* Wacoma_DemoApp.swift in Sources */,
-				38AC6480264C452B00CD9279 /* Navigation.swift in Sources */,
-				38AC6482264C454300CD9279 /* Settings.swift in Sources */,
+				3816E0EA274D49CF00E0D22C /* Navigation.swift in Sources */,
+				3816E0EE274D49E900E0D22C /* Sections.swift in Sources */,
+				3816E0D3274D493400E0D22C /* ContentView.swift in Sources */,
+				3816E0D1274D493400E0D22C /* Wacoma_DemoApp.swift in Sources */,
+				3816E0F0274D49E900E0D22C /* Settings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3816E0CA274D493400E0D22C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3816E0EB274D49CF00E0D22C /* Navigation.swift in Sources */,
+				3816E0EF274D49E900E0D22C /* Sections.swift in Sources */,
+				3816E0D4274D493400E0D22C /* ContentView.swift in Sources */,
+				3816E0D2274D493400E0D22C /* Wacoma_DemoApp.swift in Sources */,
+				3816E0F1274D49E900E0D22C /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		38AC6478264C44C600CD9279 /* Debug */ = {
+		3816E0D7274D493400E0D22C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -246,23 +321,21 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		38AC6479264C44C600CD9279 /* Release */ = {
+		3816E0D8274D493400E0D22C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -301,81 +374,156 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		38AC647B264C44C600CD9279 /* Debug */ = {
+		3816E0DA274D493400E0D22C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Wacoma-Demo/Wacoma-Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Wacoma-Demo/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VV92S3CB9G;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Wacoma-Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jehanson.Wacoma-Demo";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
+				PRODUCT_NAME = "Wacoma-Demo";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		38AC647C264C44C600CD9279 /* Release */ = {
+		3816E0DB274D493400E0D22C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Wacoma-Demo/Wacoma-Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Wacoma-Demo/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VV92S3CB9G;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Wacoma-Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jehanson.Wacoma-Demo";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
+				PRODUCT_NAME = "Wacoma-Demo";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3816E0DD274D493400E0D22C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VV92S3CB9G;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jehanson.Wacoma-Demo";
+				PRODUCT_NAME = "Wacoma-Demo";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3816E0DE274D493400E0D22C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VV92S3CB9G;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jehanson.Wacoma-Demo";
+				PRODUCT_NAME = "Wacoma-Demo";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		38AC6466264C44C300CD9279 /* Build configuration list for PBXProject "Wacoma-Demo" */ = {
+		3816E0BF274D493200E0D22C /* Build configuration list for PBXProject "Wacoma-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				38AC6478264C44C600CD9279 /* Debug */,
-				38AC6479264C44C600CD9279 /* Release */,
+				3816E0D7274D493400E0D22C /* Debug */,
+				3816E0D8274D493400E0D22C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38AC647A264C44C600CD9279 /* Build configuration list for PBXNativeTarget "Wacoma-Demo" */ = {
+		3816E0D9274D493400E0D22C /* Build configuration list for PBXNativeTarget "Wacoma-Demo (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				38AC647B264C44C600CD9279 /* Debug */,
-				38AC647C264C44C600CD9279 /* Release */,
+				3816E0DA274D493400E0D22C /* Debug */,
+				3816E0DB274D493400E0D22C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3816E0DC274D493400E0D22C /* Build configuration list for PBXNativeTarget "Wacoma-Demo (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3816E0DD274D493400E0D22C /* Debug */,
+				3816E0DE274D493400E0D22C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -383,7 +531,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		38E09073273055DA007DEB5D /* XCRemoteSwiftPackageReference "Wacoma" */ = {
+		3816E0DF274D495900E0D22C /* XCRemoteSwiftPackageReference "Wacoma" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/jehansontech/Wacoma";
 			requirement = {
@@ -394,17 +542,27 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		38E09074273055DA007DEB5D /* Wacoma */ = {
+		3816E0E0274D495900E0D22C /* Wacoma */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 38E09073273055DA007DEB5D /* XCRemoteSwiftPackageReference "Wacoma" */;
+			package = 3816E0DF274D495900E0D22C /* XCRemoteSwiftPackageReference "Wacoma" */;
 			productName = Wacoma;
 		};
-		38E09076273055DA007DEB5D /* WacomaUI */ = {
+		3816E0E2274D495900E0D22C /* WacomaUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 38E09073273055DA007DEB5D /* XCRemoteSwiftPackageReference "Wacoma" */;
+			package = 3816E0DF274D495900E0D22C /* XCRemoteSwiftPackageReference "Wacoma" */;
+			productName = WacomaUI;
+		};
+		3816E0E5274D496A00E0D22C /* Wacoma */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3816E0DF274D495900E0D22C /* XCRemoteSwiftPackageReference "Wacoma" */;
+			productName = Wacoma;
+		};
+		3816E0E7274D496A00E0D22C /* WacomaUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3816E0DF274D495900E0D22C /* XCRemoteSwiftPackageReference "Wacoma" */;
 			productName = WacomaUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 38AC6463264C44C300CD9279 /* Project object */;
+	rootObject = 3816E0BC274D493200E0D22C /* Project object */;
 }
