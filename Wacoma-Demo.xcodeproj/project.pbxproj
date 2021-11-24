@@ -27,10 +27,10 @@
 		389D9478274D4B4300260643 /* ToDo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 389D9474274D4B4300260643 /* ToDo.txt */; };
 		389D9479274D4B4300260643 /* Done.txt in Resources */ = {isa = PBXBuildFile; fileRef = 389D9475274D4B4300260643 /* Done.txt */; };
 		389D947A274D4B4300260643 /* Done.txt in Resources */ = {isa = PBXBuildFile; fileRef = 389D9475274D4B4300260643 /* Done.txt */; };
-		389D947B274D4B4300260643 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 389D9476274D4B4300260643 /* README.md */; };
-		389D947C274D4B4300260643 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 389D9476274D4B4300260643 /* README.md */; };
 		389D947E274D4B4E00260643 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 389D947D274D4B4E00260643 /* LICENSE */; };
 		389D947F274D4B4E00260643 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 389D947D274D4B4E00260643 /* LICENSE */; };
+		38B1AACE274E7AAC00D29C5A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 38B1AACD274E7AAC00D29C5A /* README.md */; };
+		38B1AACF274E7AAC00D29C5A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 38B1AACD274E7AAC00D29C5A /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,10 +43,11 @@
 		3816E0E9274D49CF00E0D22C /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		3816E0EC274D49E800E0D22C /* Sections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
 		3816E0ED274D49E800E0D22C /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		38187E5F274D59E600244D04 /* Wacoma */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Wacoma; path = ../Wacoma; sourceTree = "<group>"; };
 		389D9474274D4B4300260643 /* ToDo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToDo.txt; sourceTree = "<group>"; };
 		389D9475274D4B4300260643 /* Done.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Done.txt; sourceTree = "<group>"; };
-		389D9476274D4B4300260643 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		389D947D274D4B4E00260643 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		38B1AACD274E7AAC00D29C5A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,12 +75,14 @@
 		3816E0BB274D493200E0D22C = {
 			isa = PBXGroup;
 			children = (
-				389D947D274D4B4E00260643 /* LICENSE */,
 				389D9473274D4B4300260643 /* Notes */,
 				3816E0C0274D493200E0D22C /* Shared */,
 				3816E0CF274D493400E0D22C /* macOS */,
-				3816E0C9274D493400E0D22C /* Products */,
+				389D947D274D4B4E00260643 /* LICENSE */,
+				38B1AACD274E7AAC00D29C5A /* README.md */,
 				3816E0E4274D496A00E0D22C /* Frameworks */,
+				38187E5E274D59E600244D04 /* Packages */,
+				3816E0C9274D493400E0D22C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,7 +94,6 @@
 				3816E0E9274D49CF00E0D22C /* Navigation.swift */,
 				3816E0C1274D493200E0D22C /* Wacoma_DemoApp.swift */,
 				3816E0C2274D493200E0D22C /* ContentView.swift */,
-				389D9476274D4B4300260643 /* README.md */,
 				3816E0C3274D493400E0D22C /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -119,6 +121,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38187E5E274D59E600244D04 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				38187E5F274D59E600244D04 /* Wacoma */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 		389D9473274D4B4300260643 /* Notes */ = {
@@ -222,7 +232,7 @@
 			files = (
 				389D9477274D4B4300260643 /* ToDo.txt in Resources */,
 				3816E0D5274D493400E0D22C /* Assets.xcassets in Resources */,
-				389D947B274D4B4300260643 /* README.md in Resources */,
+				38B1AACE274E7AAC00D29C5A /* README.md in Resources */,
 				389D9479274D4B4300260643 /* Done.txt in Resources */,
 				389D947E274D4B4E00260643 /* LICENSE in Resources */,
 			);
@@ -234,7 +244,7 @@
 			files = (
 				389D9478274D4B4300260643 /* ToDo.txt in Resources */,
 				3816E0D6274D493400E0D22C /* Assets.xcassets in Resources */,
-				389D947C274D4B4300260643 /* README.md in Resources */,
+				38B1AACF274E7AAC00D29C5A /* README.md in Resources */,
 				389D947A274D4B4300260643 /* Done.txt in Resources */,
 				389D947F274D4B4E00260643 /* LICENSE in Resources */,
 			);
@@ -396,7 +406,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -426,7 +436,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,7 +470,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jehanson.Wacoma-Demo";
 				PRODUCT_NAME = "Wacoma-Demo";
@@ -488,7 +498,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jehanson.Wacoma-Demo";
 				PRODUCT_NAME = "Wacoma-Demo";
