@@ -226,7 +226,7 @@ class NavRegistry: ObservableObject {
     }
 
     func settingsView(_ itemName: String) -> some View {
-        Group { [self] in
+        Group { // [self] in
             switch itemName {
 //            case foo1.name:
 //                FooSettingsView($foo1)
@@ -305,15 +305,15 @@ struct NavSelectorView : View {
                         Text("\(name)")
                         Spacer()
                         Image(systemName: "chevron.right")
-                            .foregroundColor(UIConstants.controlColor)
+                            // .foregroundColor(UIConstants.controlColor)
                     }
-                    .modifier(SpanningButtonStyle())
+                    // .modifier(SpanningButtonStyle())
                 }
             }
             Spacer()
         }
-        .foregroundColor(UIConstants.offWhite)
-        .background(UIConstants.offBlack)
+//        .foregroundColor(UIConstants.offWhite)
+//        .background(UIConstants.offBlack)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .modifier(NavBarStyle("Items"))
     }
@@ -325,8 +325,8 @@ struct NavDisplayView: View {
 
     var body: some View {
         registry.displayView(registry.selectionName)
-            .foregroundColor(UIConstants.offWhite)
-            .background(UIConstants.offBlack)
+//            .foregroundColor(UIConstants.offWhite)
+//            .background(UIConstants.offBlack)
             .modifier(NavBarStyle("\(registry.selectionName)"))
     }
 }

@@ -8,68 +8,57 @@
 import SwiftUI
 import WacomaUI
 
-enum SelectedLayer {
-    case settings
-    case sections
-    case navigation
-}
-
 struct ContentView: View {
 
-    @State var selectedLayer: SelectedLayer = .settings
+    @State var page: Page = .sections
 
     var body: some View {
+        DisplayControls()
+            .padding()
+        PageView()
+            .padding()
+    }
+}
 
-        VStack {
+struct DisplayControls: View {
 
-            HStack {
-                Button(action: {
-                    selectedLayer = .settings
-                }) {
-                    Text("Settings")
-                }
-                .modifier(TextButtonStyle())
+    @EnvironmentObject var displayState: DisplayState
 
-                Button(action: {
-                    selectedLayer = .sections
-                }) {
-                    Text("Sections")
-                }
-                .modifier(TextButtonStyle())
+    var body: some View {
+        HStack(alignment: .center, spacing: 10) {
 
-                Button(action: {
-                    selectedLayer = .navigation
-                }) {
-                    Text("Navigation")
-                }
-                .modifier(TextButtonStyle())
-
+            Button(action: {
+                displayState.dark = !displayState.dark
+            }) {
+                Text(displayState.dark ? "Light" : "Dark")
             }
 
-            ZStack {
-                Settings()
-                    .foregroundColor(UIConstants.offWhite)
-                    .background(UIConstants.offBlack)
-                    .border(UIConstants.darkGray)
-                    .padding(UIConstants.pageInsets)
-                    .zIndex(selectedLayer == .settings ? 200 : 100)
+            Picker("", selection: $displayState.currentPage) {
+                ForEach(Page.allCases, id: \.self) { p in
+                    Text(p.rawValue).tag(p)
+                }
+            }
+            .pickerStyle(.segmented)
+        }
+    }
+}
 
+struct PageView: View {
+
+    @EnvironmentObject var displayState: DisplayState
+
+    var body: some View {
+        Group {
+            switch displayState.currentPage {
+//            case .v1Settings:
+//                V1Settings()
+            case .sections:
                 Sections()
-                    .foregroundColor(UIConstants.offWhite)
-                    .background(UIConstants.offBlack)
-                    .border(UIConstants.darkGray)
-                    .padding(UIConstants.pageInsets)
-                    .zIndex(selectedLayer == .sections ? 200 : 100)
-
+            case .navigation:
                 Navigation()
-                    .foregroundColor(UIConstants.offWhite)
-                    .background(UIConstants.offBlack)
-                    .border(UIConstants.darkGray)
-                    .padding(UIConstants.pageInsets)
-                    .zIndex(selectedLayer == .navigation ? 200 : 100)
-
             }
         }
+        .preferredColorScheme(displayState.dark ? .dark : .light) // put it here for convenience
     }
 }
 

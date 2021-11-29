@@ -1,5 +1,5 @@
 //
-//  Wacoma_DemoApp.swift
+//  WacomaDemoApp.swift
 //  Wacoma-Demo
 //
 //  Created by Jim Hanson on 5/12/21.
@@ -8,11 +8,15 @@
 import SwiftUI
 
 @main
-struct Wacoma_DemoApp: App {
+struct WacomaDemoApp: App {
+
+    @State var displayState = DisplayState()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .preferredColorScheme(.dark)
+                .environmentObject(displayState)
+
         }
     }
 }
