@@ -16,6 +16,7 @@ struct ContentView: View {
             .padding()
         PageView()
             .padding()
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
@@ -26,10 +27,13 @@ struct DisplayControls: View {
     var body: some View {
         HStack(alignment: .center, spacing: 10) {
 
+            Spacer()
+
             Button(action: {
                 displayState.dark = !displayState.dark
             }) {
-                Text(displayState.dark ? "Light" : "Dark")
+                // lightbulb
+                Image(systemName: "sun.max.fill")
             }
 
             Picker("", selection: $displayState.currentPage) {
@@ -38,7 +42,10 @@ struct DisplayControls: View {
                 }
             }
             .pickerStyle(.segmented)
+
+            Spacer()
         }
+
     }
 }
 

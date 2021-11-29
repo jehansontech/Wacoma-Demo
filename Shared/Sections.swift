@@ -13,19 +13,29 @@ struct Sections: View {
     var body: some View {
         HStack(alignment: .top) {
             VStack(alignment: .leading) {
-//
-//                twistieDemo("Group 1 (default)", $group1)
-//                Divider()
-//                twistieDemo("Group 2 (headerStyle = fill)", $group2)
-//                Divider()
-//                twistieDemo("Group 3 (autocollapse = false)", $group3)
-//                Spacer()
-            }
-            .animation(.easeInOut)
 
-            Spacer()
+                DisclosureGroup("Group 1") {
+                    SectionContent("Group 1")
+                }
+                DisclosureGroup("Group 2") {
+                    SectionContent("Group 2")
+                }
+            }
         }
     }
+}
+
+struct SectionContent: View {
+
+    var name: String
+
+    var body: some View {
+        Text(name)
+    }
+
+    init(_ name: String) {
+        self.name = name
+}
 
 //    func twistieDemo(_ name: String, _ group: Binding<TwistieGroup>) -> some View {
 //
