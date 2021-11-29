@@ -15,9 +15,9 @@ struct ColorSequences: View {
     var body: some View {
         VStack {
             HStack {
-//                ForEach(model.defaultColorSequence.colors, id: \.self) { color in
-//                    Rectangle().background(color).frame(width: 50, height: 50)
-//                }
+                ForEach(model.defaultColorSequence.colors, id: \.self) { color in
+                    Rectangle().foregroundColor(color).frame(width: 50, height: 50)
+                }
             }
             Text("Default Colors")
         }

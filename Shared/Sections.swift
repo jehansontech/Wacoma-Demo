@@ -9,20 +9,16 @@ import SwiftUI
 
 struct Sections: View {
     
+    var sectionCount: Int = 4
 
     var body: some View {
         HStack(alignment: .top) {
             VStack(alignment: .leading) {
-
-                DisclosureGroup("Group 1") {
-                    SectionContent("Group 1")
-                        .frame(minHeight: 200)
-                        .border(Color.gray)
-                }
-                DisclosureGroup("Group 2") {
-                    SectionContent("Group 2")
-                        .frame(minHeight: 200)
-                        .border(Color.gray)
+                ForEach(1...sectionCount, id: \.self) { idx in
+                    DisclosureGroup("Section \(idx)") {
+                        SectionContent("Section \(idx)")
+                            .modifier(SectionStyle())
+                    }
                 }
             }
         }
@@ -39,33 +35,16 @@ struct SectionContent: View {
 
     init(_ name: String) {
         self.name = name
+    }
 }
 
-//    func twistieDemo(_ name: String, _ group: Binding<TwistieGroup>) -> some View {
-//
-//        Group {
-//            Text(name)
-//
-//            TwistieSection("Alpha", group) {
-//                VStack {
-//                    Text("Alpha Text 0")
-//                    Text("Alpha Text 1")
-//                }
-//            }
-//
-//            TwistieSection("Beta", group) {
-//                VStack {
-//                    Text("Beta Text 0 is a bit wider")
-//                    Text("Beta Text 1")
-//                }
-//            }
-//
-//            TwistieSection("Gamma", group) {
-//                VStack {
-//                    Text("Gamma Text 0 is the widest of all the texts")
-//                }
-//            }
-//        }
-//    }
+struct SectionStyle: ViewModifier {
+
+    public func body(content: Content) -> some View {
+        content
+            .frame(maxWidth: .infinity, minHeight: 200)
+            .border(Color.gray)
+    }
+
 }
 
