@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import WacomaUI
 
 struct ContentView: View {
 

@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import WacomaUI
 
 enum NavItemType: CaseIterable {
     case foo
