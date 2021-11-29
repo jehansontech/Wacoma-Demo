@@ -22,7 +22,7 @@ struct ContentView: View {
 
 struct DisplayControls: View {
 
-    @EnvironmentObject var displayState: DisplayState
+    @EnvironmentObject var model: AppModel
 
     var body: some View {
         HStack(alignment: .center, spacing: 10) {
@@ -30,12 +30,12 @@ struct DisplayControls: View {
             Spacer()
 
             Button(action: {
-                displayState.dark = !displayState.dark
+                model.toggleColorScheme()
             }) {
                 Image(systemName: "sun.max.fill")
             }
 
-            Picker("", selection: $displayState.currentPage) {
+            Picker("", selection: $model.currentPage) {
                 ForEach(Page.allCases, id: \.self) { p in
                     Text(p.rawValue).tag(p)
                 }
@@ -50,20 +50,22 @@ struct DisplayControls: View {
 
 struct PageView: View {
 
-    @EnvironmentObject var displayState: DisplayState
+    @EnvironmentObject var model: AppModel
 
     var body: some View {
         Group {
-            switch displayState.currentPage {
+            switch model.currentPage {
             case .sections:
                 Sections()
             case .navigation:
                 Navigation()
             case .rotated:
                 RotatedText()
+            case .colors:
+                ColorSequences()
             }
         }
-        .preferredColorScheme(displayState.dark ? .dark : .light) // put it here for convenience
+        .preferredColorScheme(model.colorScheme) // put it here for convenience
     }
 }
 

@@ -16,9 +16,13 @@ struct Sections: View {
 
                 DisclosureGroup("Group 1") {
                     SectionContent("Group 1")
+                        .frame(minHeight: 200)
+                        .border(Color.gray)
                 }
                 DisclosureGroup("Group 2") {
                     SectionContent("Group 2")
+                        .frame(minHeight: 200)
+                        .border(Color.gray)
                 }
             }
         }

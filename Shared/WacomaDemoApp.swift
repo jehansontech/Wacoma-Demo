@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct WacomaDemoApp: App {
 
-    @State var displayState = DisplayState()
+    @State var displayState = AppModel()
 
     var body: some Scene {
         WindowGroup {
