@@ -12,7 +12,6 @@ import SwiftUI
 enum Page: String, CaseIterable, Identifiable {
     case navigation = "Navigation"
     case sections = "Twistie Sections"
-    // case v1Settings = "Settings (v1)"
 
     var id: String { return self.rawValue }
 }

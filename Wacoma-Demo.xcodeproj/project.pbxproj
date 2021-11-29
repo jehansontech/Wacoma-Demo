@@ -19,8 +19,6 @@
 		3816E0EB274D49CF00E0D22C /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0E9274D49CF00E0D22C /* Navigation.swift */; };
 		3816E0EE274D49E900E0D22C /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0EC274D49E800E0D22C /* Sections.swift */; };
 		3816E0EF274D49E900E0D22C /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0EC274D49E800E0D22C /* Sections.swift */; };
-		3816E0F0274D49E900E0D22C /* V1Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0ED274D49E800E0D22C /* V1Settings.swift */; };
-		3816E0F1274D49E900E0D22C /* V1Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0ED274D49E800E0D22C /* V1Settings.swift */; };
 		389D9477274D4B4300260643 /* ToDo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 389D9474274D4B4300260643 /* ToDo.txt */; };
 		389D9478274D4B4300260643 /* ToDo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 389D9474274D4B4300260643 /* ToDo.txt */; };
 		389D9479274D4B4300260643 /* Done.txt in Resources */ = {isa = PBXBuildFile; fileRef = 389D9475274D4B4300260643 /* Done.txt */; };
@@ -42,7 +40,6 @@
 		3816E0D0274D493400E0D22C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		3816E0E9274D49CF00E0D22C /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		3816E0EC274D49E800E0D22C /* Sections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
-		3816E0ED274D49E800E0D22C /* V1Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V1Settings.swift; sourceTree = "<group>"; };
 		389D9474274D4B4300260643 /* ToDo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToDo.txt; sourceTree = "<group>"; };
 		389D9475274D4B4300260643 /* Done.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Done.txt; sourceTree = "<group>"; };
 		389D947D274D4B4E00260643 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -88,7 +85,6 @@
 			children = (
 				3816E0C3274D493400E0D22C /* Assets.xcassets */,
 				3816E0C2274D493200E0D22C /* ContentView.swift */,
-				3816E0ED274D49E800E0D22C /* V1Settings.swift */,
 				3816E0E9274D49CF00E0D22C /* Navigation.swift */,
 				3816E0EC274D49E800E0D22C /* Sections.swift */,
 				3816E0C1274D493200E0D22C /* WacomaDemoApp.swift */,
@@ -249,7 +245,6 @@
 				3816E0EE274D49E900E0D22C /* Sections.swift in Sources */,
 				3816E0D3274D493400E0D22C /* ContentView.swift in Sources */,
 				3816E0D1274D493400E0D22C /* WacomaDemoApp.swift in Sources */,
-				3816E0F0274D49E900E0D22C /* V1Settings.swift in Sources */,
 				38A0D5772753C9A000E2D543 /* DisplayState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +257,6 @@
 				3816E0EF274D49E900E0D22C /* Sections.swift in Sources */,
 				3816E0D4274D493400E0D22C /* ContentView.swift in Sources */,
 				3816E0D2274D493400E0D22C /* WacomaDemoApp.swift in Sources */,
-				3816E0F1274D49E900E0D22C /* V1Settings.swift in Sources */,
 				38A0D5782753C9A000E2D543 /* DisplayState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
