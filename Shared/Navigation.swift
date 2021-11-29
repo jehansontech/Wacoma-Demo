@@ -1,6 +1,6 @@
 //
 //  Navigation.swift
-//  UIStuffForSwift-Demo
+//  Wacoma-Demo
 //
 //  Created by Jim Hanson on 4/24/21.
 //

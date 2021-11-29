@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3816E0D1274D493400E0D22C /* WacomaDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0C1274D493200E0D22C /* WacomaDemoApp.swift */; };
-		3816E0D2274D493400E0D22C /* WacomaDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0C1274D493200E0D22C /* WacomaDemoApp.swift */; };
+		3816E0D1274D493400E0D22C /* Wacoma_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0C1274D493200E0D22C /* Wacoma_DemoApp.swift */; };
+		3816E0D2274D493400E0D22C /* Wacoma_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0C1274D493200E0D22C /* Wacoma_DemoApp.swift */; };
 		3816E0D3274D493400E0D22C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0C2274D493200E0D22C /* ContentView.swift */; };
 		3816E0D4274D493400E0D22C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0C2274D493200E0D22C /* ContentView.swift */; };
 		3816E0D5274D493400E0D22C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3816E0C3274D493400E0D22C /* Assets.xcassets */; };
@@ -36,7 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3816E0C1274D493200E0D22C /* WacomaDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WacomaDemoApp.swift; sourceTree = "<group>"; };
+		3816E0C1274D493200E0D22C /* Wacoma_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wacoma_DemoApp.swift; sourceTree = "<group>"; };
 		3816E0C2274D493200E0D22C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3816E0C3274D493400E0D22C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3816E0C8274D493400E0D22C /* Wacoma-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wacoma-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,7 +94,7 @@
 				3816E0C2274D493200E0D22C /* ContentView.swift */,
 				3816E0E9274D49CF00E0D22C /* Navigation.swift */,
 				3816E0EC274D49E800E0D22C /* Sections.swift */,
-				3816E0C1274D493200E0D22C /* WacomaDemoApp.swift */,
+				3816E0C1274D493200E0D22C /* Wacoma_DemoApp.swift */,
 				38A0D5762753C9A000E2D543 /* AppModel.swift */,
 				3823141227553CB800262C69 /* RotatedText.swift */,
 				382314152755433500262C69 /* ColorSequences.swift */,
@@ -260,7 +260,7 @@
 				3816E0EA274D49CF00E0D22C /* Navigation.swift in Sources */,
 				3816E0EE274D49E900E0D22C /* Sections.swift in Sources */,
 				3816E0D3274D493400E0D22C /* ContentView.swift in Sources */,
-				3816E0D1274D493400E0D22C /* WacomaDemoApp.swift in Sources */,
+				3816E0D1274D493400E0D22C /* Wacoma_DemoApp.swift in Sources */,
 				3823141327553CB900262C69 /* RotatedText.swift in Sources */,
 				382314162755433500262C69 /* ColorSequences.swift in Sources */,
 				38A0D5772753C9A000E2D543 /* AppModel.swift in Sources */,
@@ -274,7 +274,7 @@
 				3816E0EB274D49CF00E0D22C /* Navigation.swift in Sources */,
 				3816E0EF274D49E900E0D22C /* Sections.swift in Sources */,
 				3816E0D4274D493400E0D22C /* ContentView.swift in Sources */,
-				3816E0D2274D493400E0D22C /* WacomaDemoApp.swift in Sources */,
+				3816E0D2274D493400E0D22C /* Wacoma_DemoApp.swift in Sources */,
 				3823141427553CB900262C69 /* RotatedText.swift in Sources */,
 				382314172755433500262C69 /* ColorSequences.swift in Sources */,
 				38A0D5782753C9A000E2D543 /* AppModel.swift in Sources */,

@@ -10,16 +10,17 @@ import Wacoma
 
 struct ColorSequences: View {
 
+    var size: CGFloat = 24
     @EnvironmentObject var model: AppModel
 
     var body: some View {
         VStack {
             HStack {
                 ForEach(model.defaultColorSequence.colors, id: \.self) { color in
-                    Rectangle().foregroundColor(color).frame(width: 50, height: 50)
+                    Rectangle().foregroundColor(color).frame(width: size, height: size)
                 }
             }
-            Text("Default Colors")
+            Text("Default Color Sequence")
         }
     }
 }
