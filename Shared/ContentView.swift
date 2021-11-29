@@ -32,7 +32,6 @@ struct DisplayControls: View {
             Button(action: {
                 displayState.dark = !displayState.dark
             }) {
-                // lightbulb
                 Image(systemName: "sun.max.fill")
             }
 
@@ -56,12 +55,12 @@ struct PageView: View {
     var body: some View {
         Group {
             switch displayState.currentPage {
-//            case .v1Settings:
-//                V1Settings()
             case .sections:
                 Sections()
             case .navigation:
                 Navigation()
+            case .rotated:
+                RotatedText()
             }
         }
         .preferredColorScheme(displayState.dark ? .dark : .light) // put it here for convenience

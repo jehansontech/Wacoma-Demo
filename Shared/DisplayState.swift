@@ -12,6 +12,7 @@ import SwiftUI
 enum Page: String, CaseIterable, Identifiable {
     case navigation = "Navigation"
     case sections = "Twistie Sections"
+    case rotated = "Rotated Text"
 
     var id: String { return self.rawValue }
 }
