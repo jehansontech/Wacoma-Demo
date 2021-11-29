@@ -9,9 +9,6 @@ import SwiftUI
 
 struct Sections: View {
     
-//    @State var group1 = TwistieGroup()
-//    @State var group2 = TwistieGroup().headerStyle(.fill)
-//    @State var group3 = TwistieGroup().autoCollapse(false)
 
     var body: some View {
         HStack(alignment: .top) {
