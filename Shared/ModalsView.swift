@@ -7,11 +7,12 @@
 
 import SwiftUI
 
-struct ModalContent: ViewModifier {
+struct ModalContentStyle: ViewModifier {
     
     func body(content: Content) -> some View {
         content
             .padding()
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             .border(Color.gray)
             .padding()
     }
@@ -34,8 +35,8 @@ struct ModalsView: View {
                 Text("Popover")
             }
             .popover(isPresented: $popoverPresented) {
-                Text("Popover Contents")
-                    .modifier(ModalContent())
+                ModalContents(name: "Popover Contents", isPresented: $popoverPresented)
+                    .modifier(ModalContentStyle())
             }
 
             Button {
@@ -44,8 +45,8 @@ struct ModalsView: View {
                 Text("Sheet")
             }
             .sheet(isPresented: $sheetPresented) {
-                SheetContents(name: "Sheet contents", isPresented: $sheetPresented)
-                    .modifier(ModalContent())
+                ModalContents(name: "Sheet contents", isPresented: $sheetPresented)
+                    .modifier(ModalContentStyle())
             }
 
 #if os(macOS)
@@ -57,8 +58,8 @@ struct ModalsView: View {
                 Text("FullScreenCover")
             }
             .fullScreenCover(isPresented: $fullScreenPresented) {
-                SheetContents(name: "FullScreenCover contents", isPresented: $fullScreenPresented)
-                    .modifier(ModalContent())
+                ModalContents(name: "FullScreenCover contents", isPresented: $fullScreenPresented)
+                    .modifier(ModalContentStyle())
             }
 #endif
 
@@ -67,7 +68,7 @@ struct ModalsView: View {
 }
 
 
-struct SheetContents: View {
+struct ModalContents: View {
     
     var name: String
     
