@@ -44,7 +44,7 @@ struct DisplayControls: View {
 
             Spacer()
         }
-
+        .preferredColorScheme(model.colorScheme) // put it here for convenience
     }
 }
 
@@ -63,9 +63,10 @@ struct PageView: View {
                 RotatedText()
             case .colors:
                 ColorSequences()
+            case .modals:
+                ModalsView()
             }
         }
-        .preferredColorScheme(model.colorScheme) // put it here for convenience
     }
 }
 

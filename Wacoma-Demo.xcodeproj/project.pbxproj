@@ -23,6 +23,8 @@
 		3823141427553CB900262C69 /* RotatedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3823141227553CB800262C69 /* RotatedText.swift */; };
 		382314162755433500262C69 /* ColorSequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382314152755433500262C69 /* ColorSequences.swift */; };
 		382314172755433500262C69 /* ColorSequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382314152755433500262C69 /* ColorSequences.swift */; };
+		388764C42757D51100C8DA19 /* ModalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388764C32757D51100C8DA19 /* ModalsView.swift */; };
+		388764C52757D51100C8DA19 /* ModalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388764C32757D51100C8DA19 /* ModalsView.swift */; };
 		389D9477274D4B4300260643 /* ToDo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 389D9474274D4B4300260643 /* ToDo.txt */; };
 		389D9478274D4B4300260643 /* ToDo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 389D9474274D4B4300260643 /* ToDo.txt */; };
 		389D9479274D4B4300260643 /* Done.txt in Resources */ = {isa = PBXBuildFile; fileRef = 389D9475274D4B4300260643 /* Done.txt */; };
@@ -46,6 +48,7 @@
 		3816E0EC274D49E800E0D22C /* Sections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
 		3823141227553CB800262C69 /* RotatedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatedText.swift; sourceTree = "<group>"; };
 		382314152755433500262C69 /* ColorSequences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSequences.swift; sourceTree = "<group>"; };
+		388764C32757D51100C8DA19 /* ModalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalsView.swift; sourceTree = "<group>"; };
 		389D9474274D4B4300260643 /* ToDo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToDo.txt; sourceTree = "<group>"; };
 		389D9475274D4B4300260643 /* Done.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Done.txt; sourceTree = "<group>"; };
 		389D947D274D4B4E00260643 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -98,6 +101,7 @@
 				38A0D5762753C9A000E2D543 /* AppModel.swift */,
 				3823141227553CB800262C69 /* RotatedText.swift */,
 				382314152755433500262C69 /* ColorSequences.swift */,
+				388764C32757D51100C8DA19 /* ModalsView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -264,6 +268,7 @@
 				3823141327553CB900262C69 /* RotatedText.swift in Sources */,
 				382314162755433500262C69 /* ColorSequences.swift in Sources */,
 				38A0D5772753C9A000E2D543 /* AppModel.swift in Sources */,
+				388764C42757D51100C8DA19 /* ModalsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +283,7 @@
 				3823141427553CB900262C69 /* RotatedText.swift in Sources */,
 				382314172755433500262C69 /* ColorSequences.swift in Sources */,
 				38A0D5782753C9A000E2D543 /* AppModel.swift in Sources */,
+				388764C52757D51100C8DA19 /* ModalsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,6 +15,7 @@ enum Page: String, CaseIterable {
     case sections = "Twisties"
     case rotated = "Rotated Text"
     case colors = "Colors"
+    case modals = "Modals"
 }
 
 class AppModel: ObservableObject {
@@ -37,5 +38,4 @@ class AppModel: ObservableObject {
             fatalError("Unknown color scheme")
         }
     }
-
 }
