@@ -48,6 +48,7 @@
 		3816E0EC274D49E800E0D22C /* Sections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
 		3823141227553CB800262C69 /* RotatedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatedText.swift; sourceTree = "<group>"; };
 		382314152755433500262C69 /* ColorSequences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSequences.swift; sourceTree = "<group>"; };
+		38754CD52758BB72007EA6B9 /* Wacoma-Demo (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wacoma-Demo (iOS).entitlements"; sourceTree = "<group>"; };
 		388764C32757D51100C8DA19 /* ModalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalsView.swift; sourceTree = "<group>"; };
 		389D9474274D4B4300260643 /* ToDo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToDo.txt; sourceTree = "<group>"; };
 		389D9475274D4B4300260643 /* Done.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Done.txt; sourceTree = "<group>"; };
@@ -79,6 +80,7 @@
 		3816E0BB274D493200E0D22C = {
 			isa = PBXGroup;
 			children = (
+				38754CD52758BB72007EA6B9 /* Wacoma-Demo (iOS).entitlements */,
 				3823141827554AAC00262C69 /* Packages */,
 				389D9473274D4B4300260643 /* Notes */,
 				3816E0C0274D493200E0D22C /* Shared */,
@@ -406,6 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Wacoma-Demo (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VV92S3CB9G;
@@ -425,9 +428,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jehanson.Wacoma-Demo";
 				PRODUCT_NAME = "Wacoma-Demo";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -436,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Wacoma-Demo (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VV92S3CB9G;
@@ -455,9 +460,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jehanson.Wacoma-Demo";
 				PRODUCT_NAME = "Wacoma-Demo";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
