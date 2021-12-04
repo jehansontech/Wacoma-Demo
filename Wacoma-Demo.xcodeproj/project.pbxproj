@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38021F1A275BB5F1008BD0A0 /* BrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38021F19275BB5F1008BD0A0 /* BrowserView.swift */; };
+		38021F1B275BB5F1008BD0A0 /* BrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38021F19275BB5F1008BD0A0 /* BrowserView.swift */; };
+		38021F1E275BB8E4008BD0A0 /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = 38021F1D275BB8E4008BD0A0 /* demo.html */; };
+		38021F1F275BB8E4008BD0A0 /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = 38021F1D275BB8E4008BD0A0 /* demo.html */; };
+		38021F21275BB9F8008BD0A0 /* demo.css in Resources */ = {isa = PBXBuildFile; fileRef = 38021F20275BB9F8008BD0A0 /* demo.css */; };
+		38021F22275BB9F8008BD0A0 /* demo.css in Resources */ = {isa = PBXBuildFile; fileRef = 38021F20275BB9F8008BD0A0 /* demo.css */; };
 		3816E0D1274D493400E0D22C /* Wacoma_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0C1274D493200E0D22C /* Wacoma_DemoApp.swift */; };
 		3816E0D2274D493400E0D22C /* Wacoma_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0C1274D493200E0D22C /* Wacoma_DemoApp.swift */; };
 		3816E0D3274D493400E0D22C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816E0C2274D493200E0D22C /* ContentView.swift */; };
@@ -38,6 +44,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38021F19275BB5F1008BD0A0 /* BrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserView.swift; sourceTree = "<group>"; };
+		38021F1D275BB8E4008BD0A0 /* demo.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = demo.html; sourceTree = "<group>"; };
+		38021F20275BB9F8008BD0A0 /* demo.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = demo.css; sourceTree = "<group>"; };
 		3816E0C1274D493200E0D22C /* Wacoma_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wacoma_DemoApp.swift; sourceTree = "<group>"; };
 		3816E0C2274D493200E0D22C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3816E0C3274D493400E0D22C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,6 +86,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38021F1C275BB852008BD0A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3816E0C3274D493400E0D22C /* Assets.xcassets */,
+				38021F1D275BB8E4008BD0A0 /* demo.html */,
+				38021F20275BB9F8008BD0A0 /* demo.css */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		3816E0BB274D493200E0D22C = {
 			isa = PBXGroup;
 			children = (
@@ -94,7 +113,7 @@
 		3816E0C0274D493200E0D22C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				3816E0C3274D493400E0D22C /* Assets.xcassets */,
+				38021F1C275BB852008BD0A0 /* Resources */,
 				3816E0C2274D493200E0D22C /* ContentView.swift */,
 				3816E0E9274D49CF00E0D22C /* Navigation.swift */,
 				3816E0EC274D49E800E0D22C /* Sections.swift */,
@@ -103,6 +122,7 @@
 				3823141227553CB800262C69 /* RotatedText.swift */,
 				382314152755433500262C69 /* ColorSequences.swift */,
 				388764C32757D51100C8DA19 /* ModalsView.swift */,
+				38021F19275BB5F1008BD0A0 /* BrowserView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -237,9 +257,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				389D9477274D4B4300260643 /* ToDo.txt in Resources */,
+				38021F1E275BB8E4008BD0A0 /* demo.html in Resources */,
 				3816E0D5274D493400E0D22C /* Assets.xcassets in Resources */,
 				38B1AACE274E7AAC00D29C5A /* README.md in Resources */,
 				389D9479274D4B4300260643 /* Done.txt in Resources */,
+				38021F21275BB9F8008BD0A0 /* demo.css in Resources */,
 				389D947E274D4B4E00260643 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,9 +271,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				389D9478274D4B4300260643 /* ToDo.txt in Resources */,
+				38021F1F275BB8E4008BD0A0 /* demo.html in Resources */,
 				3816E0D6274D493400E0D22C /* Assets.xcassets in Resources */,
 				38B1AACF274E7AAC00D29C5A /* README.md in Resources */,
 				389D947A274D4B4300260643 /* Done.txt in Resources */,
+				38021F22275BB9F8008BD0A0 /* demo.css in Resources */,
 				389D947F274D4B4E00260643 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +289,7 @@
 			files = (
 				3816E0EA274D49CF00E0D22C /* Navigation.swift in Sources */,
 				3816E0EE274D49E900E0D22C /* Sections.swift in Sources */,
+				38021F1A275BB5F1008BD0A0 /* BrowserView.swift in Sources */,
 				3816E0D3274D493400E0D22C /* ContentView.swift in Sources */,
 				3816E0D1274D493400E0D22C /* Wacoma_DemoApp.swift in Sources */,
 				3823141327553CB900262C69 /* RotatedText.swift in Sources */,
@@ -280,6 +305,7 @@
 			files = (
 				3816E0EB274D49CF00E0D22C /* Navigation.swift in Sources */,
 				3816E0EF274D49E900E0D22C /* Sections.swift in Sources */,
+				38021F1B275BB5F1008BD0A0 /* BrowserView.swift in Sources */,
 				3816E0D4274D493400E0D22C /* ContentView.swift in Sources */,
 				3816E0D2274D493400E0D22C /* Wacoma_DemoApp.swift in Sources */,
 				3823141427553CB900262C69 /* RotatedText.swift in Sources */,

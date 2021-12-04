@@ -65,6 +65,8 @@ struct PageView: View {
                 ColorSequences()
             case .modals:
                 ModalsView()
+            case .browser:
+                BrowserView()
             }
         }
     }

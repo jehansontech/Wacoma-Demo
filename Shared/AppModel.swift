@@ -16,6 +16,7 @@ enum Page: String, CaseIterable {
     case rotated = "Rotated Text"
     case colors = "Colors"
     case modals = "Modals"
+    case browser = "Browser"
 }
 
 class AppModel: ObservableObject {
