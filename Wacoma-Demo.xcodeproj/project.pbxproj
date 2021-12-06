@@ -31,10 +31,6 @@
 		382314172755433500262C69 /* ColorSequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382314152755433500262C69 /* ColorSequences.swift */; };
 		388764C42757D51100C8DA19 /* ModalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388764C32757D51100C8DA19 /* ModalsView.swift */; };
 		388764C52757D51100C8DA19 /* ModalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388764C32757D51100C8DA19 /* ModalsView.swift */; };
-		389D9477274D4B4300260643 /* ToDo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 389D9474274D4B4300260643 /* ToDo.txt */; };
-		389D9478274D4B4300260643 /* ToDo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 389D9474274D4B4300260643 /* ToDo.txt */; };
-		389D9479274D4B4300260643 /* Done.txt in Resources */ = {isa = PBXBuildFile; fileRef = 389D9475274D4B4300260643 /* Done.txt */; };
-		389D947A274D4B4300260643 /* Done.txt in Resources */ = {isa = PBXBuildFile; fileRef = 389D9475274D4B4300260643 /* Done.txt */; };
 		389D947E274D4B4E00260643 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 389D947D274D4B4E00260643 /* LICENSE */; };
 		389D947F274D4B4E00260643 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 389D947D274D4B4E00260643 /* LICENSE */; };
 		38A0D5772753C9A000E2D543 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A0D5762753C9A000E2D543 /* AppModel.swift */; };
@@ -59,8 +55,6 @@
 		382314152755433500262C69 /* ColorSequences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSequences.swift; sourceTree = "<group>"; };
 		38754CD52758BB72007EA6B9 /* Wacoma-Demo (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wacoma-Demo (iOS).entitlements"; sourceTree = "<group>"; };
 		388764C32757D51100C8DA19 /* ModalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalsView.swift; sourceTree = "<group>"; };
-		389D9474274D4B4300260643 /* ToDo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToDo.txt; sourceTree = "<group>"; };
-		389D9475274D4B4300260643 /* Done.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Done.txt; sourceTree = "<group>"; };
 		389D947D274D4B4E00260643 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		38A0D5762753C9A000E2D543 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		38B1AACD274E7AAC00D29C5A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -99,7 +93,6 @@
 		3816E0BB274D493200E0D22C = {
 			isa = PBXGroup;
 			children = (
-				389D9473274D4B4300260643 /* Notes */,
 				3816E0C0274D493200E0D22C /* Shared */,
 				38754CD62758BC19007EA6B9 /* iOS */,
 				3816E0CF274D493400E0D22C /* macOS */,
@@ -158,15 +151,6 @@
 			);
 			path = iOS;
 			sourceTree = "<group>";
-		};
-		389D9473274D4B4300260643 /* Notes */ = {
-			isa = PBXGroup;
-			children = (
-				389D9474274D4B4300260643 /* ToDo.txt */,
-				389D9475274D4B4300260643 /* Done.txt */,
-			);
-			path = Notes;
-			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -256,11 +240,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				389D9477274D4B4300260643 /* ToDo.txt in Resources */,
 				38021F1E275BB8E4008BD0A0 /* demo.html in Resources */,
 				3816E0D5274D493400E0D22C /* Assets.xcassets in Resources */,
 				38B1AACE274E7AAC00D29C5A /* README.md in Resources */,
-				389D9479274D4B4300260643 /* Done.txt in Resources */,
 				38021F21275BB9F8008BD0A0 /* demo.css in Resources */,
 				389D947E274D4B4E00260643 /* LICENSE in Resources */,
 			);
@@ -270,11 +252,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				389D9478274D4B4300260643 /* ToDo.txt in Resources */,
 				38021F1F275BB8E4008BD0A0 /* demo.html in Resources */,
 				3816E0D6274D493400E0D22C /* Assets.xcassets in Resources */,
 				38B1AACF274E7AAC00D29C5A /* README.md in Resources */,
-				389D947A274D4B4300260643 /* Done.txt in Resources */,
 				38021F22275BB9F8008BD0A0 /* demo.css in Resources */,
 				389D947F274D4B4E00260643 /* LICENSE in Resources */,
 			);
