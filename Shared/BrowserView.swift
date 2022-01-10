@@ -13,7 +13,7 @@ struct BrowserView : View {
     let pageName: String = "demo"
 
     var body: some View {
-        WKWebViewWrapper(pageName)
+        HTMLResourceView(pageName)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
