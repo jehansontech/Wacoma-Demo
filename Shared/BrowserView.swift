@@ -10,10 +10,11 @@ import Wacoma
 
 struct BrowserView : View {
 
-    let pageName: String = "demo"
+    @State var pageName: String = "demo"
+    @State var anchor: String? = nil
 
     var body: some View {
-        HTMLResourceView(pageName)
+        HTMLResourceView($pageName, $anchor)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }

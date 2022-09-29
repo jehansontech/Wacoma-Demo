@@ -350,7 +350,7 @@ struct NavBarStyle: ViewModifier {
     public func body(content: Content) -> some View {
 #if os(iOS)
         content
-            .navigationTitle(userStatusString)
+            .navigationTitle(title)
             .navigationBarTitleDisplayMode(.inline)
 #elseif os(macOS)
         content
