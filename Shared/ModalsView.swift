@@ -58,7 +58,7 @@ struct ModalsView: View {
                 Text("FullScreenCover")
             }
             .fullScreenCover(isPresented: $fullScreenPresented) {
-                ModalContents(name: "FullScreenCover contents", isPresented: $fullScreenPresented)
+                ModalContents(selectedScenarioName: "FullScreenCover contents", isPresented: $fullScreenPresented)
                     .modifier(ModalContentStyle())
             }
 #endif
