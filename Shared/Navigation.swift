@@ -349,11 +349,11 @@ struct NavBarStyle: ViewModifier {
 
     public func body(content: Content) -> some View {
 #if os(iOS)
-        content
+        model
             .navigationTitle(title)
             .navigationBarTitleDisplayMode(.inline)
 #elseif os(macOS)
-        content
+        model
             .navigationTitle(title)
 #endif
     }
